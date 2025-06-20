@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar compra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <h2 class="carrinho">Carrinho</h2>
+
+        <table>
+            <thead>
+                <tr class="titulos">
+                    <th>Item</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="final">
+                        <img src="./hello/color.jpg" alt="Limitado">
+                        <strong>Limitado</strong>
+                    </td>
+                    <td>
+                        <span class="oi">R$14,99</span>
+                    </td>
+                    <td>
+                   <input class="caixa" type="number" value="2" min="0">
+                   <button class="btt" type="button">Adicionar</button>   
+                    </td>
+                </tr>
+                <tr>
+                    <td class="final">
+                        <img src="./hello/amant.jpg" alt="Promoção">
+                        <strong>Promoção</strong>
+                    </td>
+                    <td>
+                        <span class="oi">R$19,99</span>
+                    </td>
+                    <td>
+                   <input class="caixa" type="number" value="1" min="0">
+                   <button class="btt" type="button">Adicionar</button> 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="final">
+                        <img src="./hello/2pop.jpg" alt="Limitado">
+                        <strong>Promoção</strong>
+                    </td>
+                    <td>
+                        <span class="oi">R$24,99</span>
+                    </td>
+                    <td>
+                   <input class="caixa" type="number" value="1" min="0">
+                   <button class="btt" type="button">Adicionar</button>   
+                    </td>
+                </tr>
+                <tr>
+                    <td class="final">
+                        <img src="./hello/persona.jpg" alt="Limitado">
+                        <strong>limitado</strong>
+                    </td>
+                    <td>
+                        <span class="oi">R$32,99</span>
+                    </td>
+                    <td>
+                   <input class="caixa" type="number" value="1" min="0">
+                   <button class="btt" type="button">Adicionar</button>   
+                    </td>
+                </tr>
+                <tr>
+                    <td class="final">
+                        <img src="./hello/mini.jpg" alt="Limitado">
+                        <strong>Promoção</strong>
+                    </td>
+                    <td>
+                        <span class="oi">R$9,99</span>
+                    </td>
+                    <td>
+                   <input class="caixa" type="number" value="1" min="0">
+                   <button class="btt" type="button">Adicionar</button>   
+                    </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3"></td>
+                        <strong>Total</strong>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    <section>
+        <a href="index.html" target="_self">
+            <button style="background-color: rgb(255, 214, 31); border: none; color: black; align-items: center; display: flex; justify-content: center; cursor: pointer; font-size: 23px; width: 100%; height: 40px;">Voltar para a loja</button>
+        </a>
+         <button class="fim"  id="botao-finalizar" >Finalizar compra</button>
+    </section>
+    
+    <script>
+  const botaoFinalizar = document.getElementById('botao-finalizar');
+
+  botaoFinalizar.addEventListener('click', function () {
+    botaoFinalizar.style.backgroundColor = '#28a745'; 
+    botaoFinalizar.style.color = 'white';
+    botaoFinalizar.textContent = 'Compra finalizada com sucesso!';
+  });
+</script>
+</body>
+</html>

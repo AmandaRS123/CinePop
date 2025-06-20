@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós-CinePop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="two">    
+        <header class="sb">
+        <h1 class="titulo">Bem-vindo ao CinePop!</h1>
+        </header>
+        <section class="tudo">
+            <div class="tudo-tudo">
+        <h2 class="sub">Venha nos conhecer aqui</h2>
+        <p class="sobre">O CinePop é um espaço onde você encontra sabor para a sua sessão de cinema. </p>
+        <p class="sobre">Nossa missão é oferecer pipoca da melhor qualidade para tornar sua experiência ainda melhor.</p>
+        <h3 class="sub">Nossa história</h3>
+        <p class="sobre">Desenvolvido pelos alunos Amanda Ramos, Victória Silva, Pedro Ribeiro e Lukkas Carvalho.</p>
+        <p class="sobre">Somos estudantes da Escola Técnica 3D, da turma RGI31</p>
+        <p class="sobre">Para melhorar a experiência de todos que amam maratonar filmes e séries,</p>
+        <p class="sobre">entregamos uma pipoca de alta qualidade com preços acessíveis!</p>
+        <h4 class="sub">Nosso objetivo</h4>
+        <p class="sobre">-Oferecer a melhor pipoca, com variedade de sabores.</p>
+        <p class="sobre">-Melhorar a experiência de todos no cinema.</p>
+        <p class="sobre">-Oferecer diversas opções com preços acessíveis para todos.</p>
+        <h5 class="sub">Valores</h5>
+        <p class="sobre">-Compromisso com a qualidade</p>
+        <p class="sobre">-Respeito pelo cliente</p>
+        <p class="sobre">-Inovação constante</p>
+        <h5 class="sub">O que você está esperando? Faça já o seu pedido!</h5>
+        <p class="sobre">Visite nossa loja virtual e faça o seu pedido.</p>
+            <p class="sobre">Siga-nos nas redes sociais para ficar por dentro das novidades e promoções.</p>
+        <h2 class="sub">Obrigado por escolher o CinePop!</h2>
+        <a href="index.html" target="_self">
+            <button style="background-color: rgb(241, 207, 9); color: black; padding: 14px 28px; font-size: 2rem; align-items: center; border-radius: 5px;">Voltar para a loja</button>
+        </a>
+            <button id="botao-motivacional" style="background-color: #ffe030; color: rgb(0, 0, 0); padding: 14px 28px; font-size: 2rem; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Mensagem motivacional</button>
+<p id="mensagem-motivacional" style="display: none; font-weight: bold; margin-top: 10px; font-size: 2rem;">Você é capaz de muito mais do que imagina!</p>
+            </div>
+        </section>
+</head>
+<body>
+    
+     <script>
+  const botao = document.getElementById('botao-motivacional');
+  const mensagem = document.getElementById('mensagem-motivacional');
+
+  botao.addEventListener('click', function () {
+    if (mensagem.style.display === 'none') {
+      mensagem.style.display = 'block';
+      botao.style.backgroundColor = '#28a745'; 
+      botao.textContent = 'Você é incrível!';
+    } else {
+      mensagem.style.display = 'none';
+      botao.style.backgroundColor = '#007BFF';
+      botao.textContent = 'Mensagem motivacional';
+    }
+  });
+</script>
+</body>
+</html>
